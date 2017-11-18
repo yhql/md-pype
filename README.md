@@ -1,11 +1,14 @@
 # md-pype
 
-Set of pandocfilters to extend markdown in a static programmed way.
+Set of pandocfilters to extend markdown with python execution and command redirection
 
 ## Contains
 
-`execpy.py` : python codeblocks beginning with `#!exec` are executed and if anything is printed inside the block, redirect it to be parsed by pandoc.
-(will) provide some convenience functions to make markdown tables, ...
+`execpy.py` : main filter that performs :
+ - python codeblocks (beginning with `#!exec)` execution and if anything is printed inside the block, redirect it to be parsed by pandoc. (will) provide some convenience functions to make markdown tables, ...
+- cobeblocks marked with `svgbob` are parsed by svgbobrus
+
+Only works when outputting html so far.
 
 ## Requirements
 
@@ -14,7 +17,7 @@ Set of pandocfilters to extend markdown in a static programmed way.
 
 ## Use
 
-`pandoc file -o file.html --filter=./execpy.py
+`pandoc file -o file.html --filter=./execpy.py`
 
 ## Example
 

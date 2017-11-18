@@ -27,3 +27,54 @@
 </tbody>
 </table>
 
+<h2 id="ascii-drawing-to-svgbob">Ascii drawing to svgbob</h2>
+<svg font-family="arial" font-size="14" height="48" width="112" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="triangle" markerHeight="10" markerUnits="strokeWidth" markerWidth="10" orient="auto" refX="15" refY="10" viewBox="0 0 50 20">
+<path d="M 0 0 L 30 10 L 0 20 z"/>
+</marker>
+</defs>
+<style>
+
+    line, path {
+      stroke: black;
+      stroke-width: 2;
+      stroke-opacity: 1;
+      fill-opacity: 1;
+      stroke-linecap: round;
+      stroke-linejoin: miter;
+    }
+    circle {
+      stroke: black;
+      stroke-width: 2;
+      stroke-opacity: 1;
+      fill-opacity: 1;
+      stroke-linecap: round;
+      stroke-linejoin: miter;
+      fill:white;
+    }
+    circle.solid {
+      fill:black;
+    }
+    circle.open {
+      fill:white;
+    }
+    tspan.head{
+        fill: none;
+        stroke: none;
+    }
+    
+</style>
+<path d=" M 4 8 L 4 32 M 4 8 L 8 8 M 12 8 L 8 8 M 12 8 L 16 8 M 8 8 L 16 8 M 8 8 L 16 8 M 20 8 L 16 8 M 20 8 L 24 8 M 16 8 L 24 8 M 16 8 L 24 8 M 28 8 L 24 8 M 28 8 L 32 8 M 24 8 L 32 8 M 24 8 L 32 8 M 36 8 L 36 16 M 36 8 L 32 8 M 76 8 L 76 32 M 76 8 L 80 8 M 84 8 L 80 8 M 84 8 L 88 8 M 80 8 L 88 8 M 80 8 L 88 8 M 92 8 L 88 8 M 92 8 L 96 8 M 88 8 L 96 8 M 88 8 L 96 8 M 100 8 L 96 8 M 100 8 L 104 8 M 96 8 L 104 8 M 96 8 L 104 8 M 108 8 L 108 32 M 108 8 L 104 8 M 4 16 L 4 32 M 36 24 L 40 24 M 36 16 L 36 32 M 44 24 L 48 24 M 40 24 L 48 24 M 40 24 L 48 24 M 52 24 L 48 24 M 52 24 L 56 24 M 48 24 L 56 24 M 48 24 L 56 24 M 60 24 L 56 24 M 76 16 L 76 32 M 108 16 L 108 32 M 4 32 L 4 40 L 8 40 M 12 40 L 8 40 M 12 40 L 16 40 M 8 40 L 16 40 M 8 40 L 16 40 M 20 40 L 16 40 M 20 40 L 24 40 M 16 40 L 24 40 M 16 40 L 24 40 M 28 40 L 24 40 M 28 40 L 32 40 M 24 40 L 32 40 M 24 40 L 32 40 M 36 32 L 36 40 L 32 40 M 76 32 L 76 40 L 80 40 M 84 40 L 80 40 M 84 40 L 88 40 M 80 40 L 88 40 M 80 40 L 88 40 M 92 40 L 88 40 M 92 40 L 96 40 M 88 40 L 96 40 M 88 40 L 96 40 M 100 40 L 96 40 M 100 40 L 104 40 M 96 40 L 104 40 M 96 40 L 104 40 M 108 32 L 108 40 L 104 40" fill="none"/>
+<path d="" fill="none" stroke-dasharray="3 3"/>
+<line marker-end="url(#triangle)" x1="56" x2="70" y1="24" y2="24"/>
+<line marker-end="url(#triangle)" x1="56" x2="70" y1="24" y2="24"/>
+<line marker-end="url(#triangle)" x1="64" x2="70" y1="24" y2="24"/>
+<text x="17" y="28">
+a
+</text>
+<text x="89" y="28">
+b
+</text>
+</svg>
+

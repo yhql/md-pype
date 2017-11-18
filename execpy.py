@@ -31,12 +31,12 @@ def execpy(key, value, format, _):
             sys.stdout = former_out
             return RawBlock('html', out.decode())
 
-        # elif 'svgbob' in classes:
-        #     svgb = sp.Popen('svgbob', stdin=sp.PIPE, stdout=sp.PIPE, stderr=sp.PIPE)
-        #     svgb.stdin.write( bytes(code,'utf-8'))
-        #     out,res = svgb.communicate()
-        #     svgb.terminate()
-        #     return RawBlock('html', out.decode())
+        elif 'svgbob' in classes:
+            svgb = sp.Popen('svgbob', stdin=sp.PIPE, stdout=sp.PIPE, stderr=sp.PIPE)
+            svgb.stdin.write( bytes(code,'utf-8'))
+            out,res = svgb.communicate()
+            svgb.terminate()
+            return RawBlock('html', out.decode())
 
 if __name__ == "__main__":
     toJSONFilter(execpy)
