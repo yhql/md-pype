@@ -1,5 +1,11 @@
 <h1 id="example-markdown-doc">Example markdown doc</h1>
 <h2 id="python-generated-table">Python generated table</h2>
+<p>Content :</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">input</span> <span class="op">=</span> <span class="bu">range</span>(<span class="dv">8</span>)
+table <span class="op">=</span> [ <span class="bu">list</span>(<span class="bu">input</span>), [x<span class="op">*</span><span class="dv">3</span> <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">input</span>] ]
+
+<span class="bu">print</span>(make_table(table))</code></pre></div>
+<p>Result :</p>
 <table>
 <thead>
 <tr class="header">
@@ -28,6 +34,11 @@
 </table>
 
 <h2 id="ascii-drawing-to-svgbob">Ascii drawing to svgbob</h2>
+<p>Content :</p>
+<pre><code>+---+    +---+
+| a |---&gt;| b |
++---+    +---+</code></pre>
+<p>Result:</p>
 <svg font-family="arial" font-size="14" height="48" width="112" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <marker id="triangle" markerHeight="10" markerUnits="strokeWidth" markerWidth="10" orient="auto" refX="15" refY="10" viewBox="0 0 50 20">
